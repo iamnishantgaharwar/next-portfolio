@@ -11,13 +11,6 @@ export const metadata: Metadata = {
   title: "Nishant Gaharwar",
   description: "Nishant Gaharwar is a Software Engineer with 1.5+ years of experience crafting scalable, high-performance web applications using TypeScript and React.",
   keywords: "Nishant Gaharwar, Nishant Gaharwar Portfolio, Nishant Gaharwar Resume, Nishant Gaharwar LinkedIn, Nishant Gaharwar GitHub",
-  icons: [
-    {
-      url: '/favicon.ico',
-      type: 'image/x-icon',
-      sizes: 'any'
-    }
-  ]
 };
 
 export default function RootLayout({
