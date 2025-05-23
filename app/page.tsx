@@ -54,7 +54,7 @@ export default function Home() {
               strong focus on performance and maintainability.
             </span>
           </p>
-          <Accordion type="single" collapsible className="w-full sm:pr-4">
+          <Accordion type="single" collapsible className="w-full pr-0 sm:pr-4">
             <AccordionItem value="work-experience" className="px-4">
               <AccordionTrigger className="text-xl font-bold">
                 💼 Work Experience
