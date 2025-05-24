@@ -1,20 +1,29 @@
+
+"use client";
 import Footer from "@/app/Footer/page";
 import AccordionPage from "../Accordion/AccordionPage";
+import { motion } from "motion/react";
+
 
 const Home = () => {
   const resume = "/nishantgaharwar.pdf";
   return (
-    <>
+    <motion.div 
+    initial={{ opacity: 0.5, filter: "blur(10px)" }}
+    animate={{ opacity: 1, filter: "blur(0px)" }}
+    transition={{ duration: 0.8 }}
+    className="min-h-screen flex flex-col overflow-x-hidden relative"
+    >
       <main className="flex flex-grow flex-col sm:flex-row">
         <nav className="flex m-4">
           <ul className="space-y-2 border-b-1 sm:border-b-0 sm:border-r-1 w-full sm:min-h-64 sm:pr-4 flex sm:flex-col justify-around sm:justify-start gap-4 sm:gap-0 py-2 sm:py-0">
             <li className="flex items-center ">
-              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0 after:bg-amber-200 after:transition-all after:duration-300 hover:after:w-full">
+              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full">
                 <a href={resume}>resume</a>
               </span>
             </li>
             <li>
-              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0 after:bg-amber-200 after:transition-all after:duration-300 hover:after:w-full">
+              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full">
                 <a
                   href="https://www.linkedin.com/in/iamnishantgaharwar/"
                   target="_blank"
@@ -26,7 +35,7 @@ const Home = () => {
               </span>
             </li>
             <li>
-              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0 after:bg-amber-200 after:transition-all after:duration-300 hover:after:w-full">
+              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full">
                 <a
                   href="https://github.com/iamnishantgaharwar"
                   target="_blank"
@@ -41,7 +50,7 @@ const Home = () => {
         </nav>
         <section className="flex flex-col my-4 mx-4 sm:mx-0">
           <h1 className="text-xl font-bold ml-4">Nishant Gaharwar</h1>
-          <h2 className="text-xl font-bold ml-4 mt-4">👋 About Me</h2>
+          <h2 className="text-xl font-bold ml-4 mt-4">👋🏽 About Me</h2>
           <p className="ml-4 space-y-2 mt-4">
             <span className="text-[1.05rem] md:w-3/4 sm:w-full block leading-relaxed">
               I&apos;m a Software Engineer with 1.5+ years of experience
@@ -63,7 +72,7 @@ const Home = () => {
       <footer className="flex-shrink-0">
         <Footer />
       </footer>
-    </>
+    </motion.div>
   );
 };
 
