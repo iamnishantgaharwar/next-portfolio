@@ -1,18 +1,16 @@
-
 "use client";
 import Footer from "@/app/Footer/page";
 import AccordionPage from "../Accordion/AccordionPage";
 import { motion } from "motion/react";
 
-
 const Home = () => {
   const resume = "/nishantgaharwar.pdf";
   return (
-    <motion.div 
-    initial={{ opacity: 0.5, filter: "blur(10px)" }}
-    animate={{ opacity: 1, filter: "blur(0px)" }}
-    transition={{ duration: 0.8 }}
-    className="min-h-screen flex flex-col overflow-x-hidden relative"
+    <motion.div
+      initial={{ opacity: 0.5, filter: "blur(10px)" }}
+      animate={{ opacity: 1, filter: "blur(0px)" }}
+      transition={{ duration: 0.8 }}
+      className="min-h-screen flex flex-col overflow-x-hidden relative"
     >
       <main className="flex flex-grow flex-col sm:flex-row">
         <nav className="flex m-4">
@@ -49,7 +47,12 @@ const Home = () => {
           </ul>
         </nav>
         <section className="flex flex-col my-4 mx-4 sm:mx-0">
-          <h1 className="text-xl font-bold ml-4">Nishant Gaharwar</h1>
+          <span className="relative inline-block w-fit">
+            <span className="absolute top-0 left-0 -right-4 bottom-0 bg-green-300 -skew-y-1  rounded-sm"></span>
+            <h1 className="text-xl font-bold ml-4 relative z-10 ">
+              Nishant Gaharwar
+            </h1>
+          </span>
           <h2 className="text-xl font-bold ml-4 mt-4">👋🏽 About Me</h2>
           <p className="ml-4 space-y-2 mt-4">
             <span className="text-[1.05rem] md:w-3/4 sm:w-full block leading-relaxed">
