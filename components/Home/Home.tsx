@@ -10,18 +10,18 @@ const Home = () => {
       initial={{ opacity: 0.5, filter: "blur(10px)" }}
       animate={{ opacity: 1, filter: "blur(0px)" }}
       transition={{ duration: 0.8 }}
-      className="min-h-screen flex flex-col overflow-x-hidden relative"
+      className="min-h-screen w-10/12 mx-auto flex flex-col overflow-x-hidden relative"
     >
       <main className="flex flex-grow flex-col sm:flex-row">
         <nav className="flex m-4">
-          <ul className="space-y-2 border-b-1 sm:border-b-0 sm:border-r-1 w-full sm:min-h-64 sm:pr-4 flex sm:flex-col justify-around sm:justify-start gap-4 sm:gap-0 py-2 sm:py-0">
+          <ul className="space-y-2 border-b-1 sm:border-b-0 sm:border-r-1 w-full sm:min-h-64 sm:pr-4 flex sm:flex-col justify-around sm:justify-start gap-4 sm:gap-0 py-2 sm:py-0 border-gray-400">
             <li className="flex items-center ">
-              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full">
+              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full">
                 <a href={resume}>resume</a>
               </span>
             </li>
             <li>
-              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full">
+              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full">
                 <a
                   href="https://www.linkedin.com/in/iamnishantgaharwar/"
                   target="_blank"
@@ -33,7 +33,7 @@ const Home = () => {
               </span>
             </li>
             <li>
-              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full">
+              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full">
                 <a
                   href="https://github.com/iamnishantgaharwar"
                   target="_blank"
@@ -48,7 +48,7 @@ const Home = () => {
         </nav>
         <section className="flex flex-col my-4 mx-4 sm:mx-0">
           <span className="relative inline-block w-fit">
-            <span className="absolute top-0 left-0 -right-4 bottom-0 bg-green-300 -skew-y-1  rounded-sm"></span>
+            <span className="absolute top-0 left-0 -right-4 bottom-0 bg-gray-400 -skew-y-1  rounded-sm"></span>
             <h1 className="text-xl font-bold ml-4 relative z-10 ">
               Nishant Gaharwar
             </h1>
