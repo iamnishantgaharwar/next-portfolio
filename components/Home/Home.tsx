@@ -10,7 +10,7 @@ const Home = () => {
       initial={{ opacity: 0.5, filter: "blur(10px)" }}
       animate={{ opacity: 1, filter: "blur(0px)" }}
       transition={{ duration: 0.8 }}
-      className="min-h-screen w-10/12 mx-auto flex flex-col overflow-x-hidden relative"
+      className="min-h-screen lg:w-10/12 xl:w-8/12 mx-auto flex flex-col overflow-x-hidden relative"
     >
       <main className="flex flex-grow flex-col sm:flex-row">
         <nav className="flex m-4">
