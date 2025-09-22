@@ -44,6 +44,18 @@ const Home = () => {
                 </a>
               </span>
             </li>
+            <li>
+              <span className="cursor-pointer text-base relative inline-block after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full">
+                <a
+                  href="https://codepen.io/iamnishantgaharwar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  codepen
+                </a>
+              </span>
+            </li>
           </ul>
         </nav>
         <section className="flex flex-col my-4 mx-4 sm:mx-0">
